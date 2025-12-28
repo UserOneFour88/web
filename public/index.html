@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя музыкальная коллекция</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Музыкальная<br>коллекция</h1>
+            <p>Сайт для дисциплины web-программирование</p>
+        </header>
+
+        <div class="filters">
+            <button class="filter-btn active" data-genre="all">Все жанры</button>
+            <button class="filter-btn" data-genre="Рок">Рок</button>
+            <button class="filter-btn" data-genre="Электронная музыка">Электронная</button>
+            <button class="filter-btn" data-genre="Метал">Метал</button>
+            <button class="filter-btn" data-genre="Прочее">Прочее</button>
+        </div>
+
+        <div class="tracks-section">
+            <h2 id="sectionTitle">Все треки</h2>
+            <div class="tracks-grid" id="tracksContainer">
+            </div>
+        </div>
+
+        <h2>Исполнители</h2>
+        <div class="artists-grid" id="artistsContainer">
+        </div>
+
+        <div class="modal" id="artistModal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <div id="modalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../src/main.js"></script>
+</body>
+</html>
